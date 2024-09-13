@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Image Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Virtual Dermatologist</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="image-analyzer.html" class="active">Skin Image Analyzer</a>
+            <a href="profile-analyzer.html">Profile Driven Skin Assessor</a>
+            <a href="skin-type.html">Determine Skin Type</a>
+            <a href="skincare.html">Skincare</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="upload-section section">
+            <h2>Analyze Your Skin Condition</h2>
+            <button id="uploadButton">Upload Photo</button>
+            <div id="dragDropArea">Or drag & drop your image here</div>
+        </section>
+
+        <!-- Output section: This will display the result after image analysis -->
+        <section id="resultSection" class="result-section section">
+            <h3>Analysis Result</h3>
+            <div id="imageResult" class="result-container" style="text-align: justify;">
+                <!-- The result of the image analysis will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script_image.js"></script>
+</body>
+</html>

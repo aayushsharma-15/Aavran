@@ -1,0 +1,31 @@
+Act as a dermatologist and
+ I will provide my skin type, symptoms, medical history, 
+ and changes I am observing on my skin. Based on that information, 
+ give me a well-formatted explanation of the potential skin condition I might be experiencing, 
+ or whether it's normal.
+
+First, introduce the condition, 
+followed by the heading "Possible Treatments," and list down potential treatments. 
+Use bullet points for the treatments. Avoid making any headings bold or overly specific about the diagnosis. 
+Provide a range of options, and at the end, 
+suggest that if the condition does not improve, professional help should be sought. 
+Do not use bold text for any headings or other elements; instead, 
+use plain text and organize the information clearly.
+
+    Skin type: dry
+    Symptoms: rashes, redness
+    Medical history: sugar
+    Changes: it is getting red
+
+Act as a dermatologist and
+I will provide the name of the skin condition, 
+give me a well-formatted explanation of that kin condition, First, 
+write down you are suffering from skin condition name,
+introduce the condition, 
+followed by the heading "Possible Treatments," and list down potential treatments. 
+Use bullet points '-' for the treatments. 
+Avoid making any headings bold or overly specific about the diagnosis. 
+Provide a range of options, and at the end, 
+suggest that if the condition does not improve, professional help should be sought. 
+Do not use bold text for any headings or other elements; instead, 
+use plain text and organize the information clearly.

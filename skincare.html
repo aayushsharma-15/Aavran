@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Virtual Skincare Specialist</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="image-analyzer.html">Skin Image Analyzer</a>
+            <a href="profile-analyzer.html">Profile Driven Skin Assessor</a>
+            <a href="skin-type.html">Determine Skin Type</a>
+            <a href="skincare.html" class="active">Skincare</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section section">
+            <h2>Find the Right Skincare Products</h2>
+            <form id="skincareForm">
+                <p>If you're unsure of your skin type, you can <a href="skin-type.html">determine your skin type here</a>.</p>
+                <label for="skinType">Select Skin Type:</label>
+                <select id="skinType" required>
+                    <option value="">--Choose your skin type--</option>
+                    <option value="dry">Dry</option>
+                    <option value="oily">Oily</option>
+                    <option value="combination">Combination</option>
+                    <option value="sensitive">Sensitive</option>
+                </select>
+
+                <label for="concerns">Specific Concerns (e.g., acne, aging, dryness):</label>
+                <textarea id="concerns" rows="3" placeholder="Enter your concerns, separated by commas"></textarea>
+
+                <label for="allergies">Allergies:</label>
+                <textarea id="allergies" rows="2" placeholder="List any allergies"></textarea>
+
+                <label for="medicalHistory">Medical History:</label>
+                <textarea id="medicalHistory" rows="3" placeholder="Provide any relevant medical history"></textarea>
+
+                <label for="desiredOutcomes">Desired Outcomes:</label>
+                <textarea id="desiredOutcomes" rows="2" placeholder="What results are you hoping for?"></textarea>
+
+                <label for="productPreferences">Product Preferences (e.g., vegan, fragrance-free):</label>
+                <textarea id="productPreferences" rows="2" placeholder="Any specific preferences?"></textarea>
+
+                <label for="budget">Budget:</label>
+                <input type="text" id="budget" placeholder="Enter your budget">
+
+                <button type="submit">Get Product Suggestions</button>
+            </form>
+        </section>
+        <section id="resultSection" class="result-section section">
+            <h3>Suggested Products</h3>
+            <div id="productResult" class="result-container" style="text-align: justify;">
+                <!-- The result of the product suggestions will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    
+
+    <script src="script_skincare.js"></script>
+</body>
+</html>
