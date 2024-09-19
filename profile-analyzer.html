@@ -21,8 +21,22 @@
     <main>
         <section class="form-section section">
             <h2>Profile</h2>
-            <p>If you're unsure of your skin type, you can <a href="skin-type.html">determine your skin type here</a>.</p>
-            <form id="skinTypeForm">
+            
+            <form id="skinTypeForm"> <!-- Make sure this matches the JavaScript -->
+                <label for="conditionStatus">Do you already know your skin condition?</label>
+                <select id="conditionStatus" required onchange="toggleForm()">
+                    <option value="">--Select an option--</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <div id="knownConditionField" style="display:none;">
+                    <label for="knownCondition">Enter your known condition:</label>
+                    <input type="text" id="knownCondition" placeholder="Enter your condition">
+                </div>
+
+                <p>If you're unsure of your skin type, you can <a href="skin-type.html">determine your skin type here</a>.</p>
+
                 <label for="skinType">Select Skin Type:</label>
                 <select id="skinType" required>
                     <option value="">--Choose your skin type--</option>
@@ -31,31 +45,32 @@
                     <option value="combination">Combination</option>
                     <option value="sensitive">Sensitive</option>
                 </select>
-    
-                <label for="appearance">Appearance (color, shape, size, texture, location):</label>
-                <textarea id="appearance" rows="3" placeholder="Describe the appearance of the lesion"></textarea>
-    
-                <label for="symptoms">Symptoms (e.g., itching, pain, burning):</label>
-                <textarea id="symptoms" rows="3" placeholder="Enter symptoms, separated by commas"></textarea>
-    
-                <label for="changes">Changes (Has the condition changed over time?):</label>
-                <textarea id="changes" rows="2" placeholder="Describe any changes"></textarea>
-    
-                <label for="medicalHistory">Medical History (e.g., previous skin conditions, allergies, medications, health conditions):</label>
-                <textarea id="medicalHistory" rows="3" placeholder="Provide your medical history"></textarea>
-    
-    
+
+                <div id="detailedForm" style="display:none;">
+                    <label for="appearance">Appearance (color, shape, size, texture, location):</label>
+                    <textarea id="appearance" rows="3" placeholder="Describe the appearance of the lesion"></textarea>
+
+                    <label for="symptoms">Symptoms (e.g., itching, pain, burning):</label>
+                    <textarea id="symptoms" rows="3" placeholder="Enter symptoms, separated by commas"></textarea>
+
+                    <label for="changes">Changes (Has the condition changed over time?):</label>
+                    <textarea id="changes" rows="2" placeholder="Describe any changes"></textarea>
+
+                    <label for="medicalHistory">Medical History (e.g., previous skin conditions, allergies, medications, health conditions):</label>
+                    <textarea id="medicalHistory" rows="3" placeholder="Provide your medical history"></textarea>
+                </div>
+
                 <button type="submit">Get Suggestions</button>
             </form>
         </section>
+
         <section id="resultSection" class="result-section section">
             <h3>Analysis Result</h3>
             <div id="ProfileResult" class="result-container" style="text-align: justify;">
-                <!-- The result of the image analysis will be displayed here -->
+                <!-- The result of the analysis will be displayed here -->
             </div>
         </section>
     </main>
-
 
     <script src="script_profile.js"></script>
 </body>

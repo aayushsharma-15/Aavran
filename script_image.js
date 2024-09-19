@@ -13,12 +13,11 @@ document.getElementById('uploadButton').addEventListener('click', async (e) => {
 I will provide the name of the skin condition, 
 give me a well-formatted explanation of that skin condition. First, 
 write down you are suffering from skin condition name,
-introduce the condition in detail, 
-followed by the heading "Possible Treatments," and list down potential treatments. 
-Use bullet points '-' for the treatments. 
+introduce the condition in detail at least one paragraph, 
+followed by the heading "Symtoms you may be experiencing," and list down potential symtoms. 
+Use bullet points '-' for any point. 
 Avoid making any headings bold or overly specific about the diagnosis. 
-Provide a range of options, and at the end, 
-suggest that if the condition does not improve, professional help should be sought. 
+Provide a range of options, and at the end, please write this sentence "for possible cure please use the profile analyzer from our portal". 
 Do not use bold text for any headings or other elements; instead, 
 use plain text and organize the information clearly. Skin condition: ${skinCondition}`;
 

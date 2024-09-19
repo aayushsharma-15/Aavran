@@ -114,3 +114,161 @@ main {
 .form-section button:hover {
     background-color: #004b5f;
 }
+
+.hero {
+    background-image: linear-gradient(to right, #006c84,#e0f7fa);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 100%;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #006c84;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #006c84;
+}
+
+.hero-image img {
+    max-width: 50%;
+    border-radius: 30px;
+    padding-left: 200px;
+}
+
+/* Features Overview */
+.features-overview {
+    background-color: #fff;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.features-overview h2 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    color: #006c84;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.feature-item {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 250px;
+    cursor: pointer;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-item img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.feature-item a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.feature-item a:hover {
+    text-decoration: underline;
+}
+
+/* How It Works Section */
+.how-it-works {
+    background-color: #fafafa;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    color: #006c84;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.step {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    width: 30%;
+    text-align: center;
+}
+
+.step img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    padding: 60px 30px;
+    text-align: center;
+}
+
